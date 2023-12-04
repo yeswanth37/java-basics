@@ -20,10 +20,29 @@ public class MotorBikeRunner {
 		// ducati.speed = 80;
 
 		honda.setSpeed(80);
-		ducati.setSpeed(100);
+		// ducati.setSpeed(100);
 
 		System.out.println(honda.getSpeed());
-		System.out.println(ducati.getSpeed());
+		// System.out.println(ducati.getSpeed());
+
+		honda.increaseSpeed(20);
+
+		// 2nd level of Encapsulation
+		// Here the logic to increase speed in this class is not an ideal way to change
+		// the speed
+		// any logic changing the state of an object should only be available in the
+		// member class
+		//
+		/*
+		 * int ducatiSpeed = ducati.getSpeed(); ducatiSpeed += 20;
+		 * ducati.setSpeed(ducatiSpeed);
+		 */
+
+		System.out.println(honda.getSpeed());
+
+		honda.decreaseSpeed(100);
+
+		System.out.println(honda.getSpeed());
 
 	}
 

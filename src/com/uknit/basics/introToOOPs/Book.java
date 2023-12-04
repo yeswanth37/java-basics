@@ -19,6 +19,8 @@ public class Book {
 		this.noOfCopies = noOfCopies;
 	}
 
+	// behavior
+
 	// override toString()
 	@Override
 	public String toString() {

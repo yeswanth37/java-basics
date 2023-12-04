@@ -7,7 +7,7 @@ public class MotorBike {
 
 	// constructor
 	public MotorBike() {
-		this.speed = 50;
+		// this.speed = 50;
 	}
 
 	// getters and setters
@@ -15,13 +15,33 @@ public class MotorBike {
 		return this.speed;
 	}
 
+	// Advantage of Encapsulation is to prevent bad data being set to our objects
+	// we can prevent bad data being set for our member variables through setters
 	public void setSpeed(int speed) { // local variable
-		this.speed = speed;
+		// System.out.println(speed); // we are printing the value of the local variable
+		// we passed while calling the
+		// method
+		// System.out.println(this.speed); // we are printing the value of the speed
+		// that object has
+		if (speed >= 0)
+			this.speed = speed;
+		else
+			System.out.println("Invalid speed to set");
+
 	}
 
 	// behavior
 	public void start() {
-		System.out.println("started! and initial speed is " + this.speed);
+		// System.out.println("started! and initial speed is " + this.speed);
+		System.out.println("Bike Created!");
+	}
+
+	public void increaseSpeed(int increaseSpeedBy) {
+		this.setSpeed(this.speed + increaseSpeedBy);
+	}
+
+	public void decreaseSpeed(int decraseSpeedBy) {
+		this.setSpeed(this.getSpeed() - decraseSpeedBy);
 	}
 
 }
