@@ -22,10 +22,15 @@ public class BookRunner {
 
 		// getting values for member variables through getters
 		System.out.println(artOfComputerProgramming.getNoOfCopies());
-		System.out.println(effectiveJava.getNoOfCopies());
-		System.out.println(cleanCode.getNoOfCopies());
+		// System.out.println(effectiveJava.getNoOfCopies());
+		// System.out.println(cleanCode.getNoOfCopies());
 
-		System.out.println(artOfComputerProgramming);
+		// System.out.println(artOfComputerProgramming);
+
+		artOfComputerProgramming.increaseNoOfCopies(100);
+		System.out.println(artOfComputerProgramming.getNoOfCopies()); // 120
+		artOfComputerProgramming.decreaseNoOfCopies(100);
+		System.out.println(artOfComputerProgramming.getNoOfCopies()); // 20
 
 	}
 

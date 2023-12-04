@@ -16,10 +16,20 @@ public class Book {
 	}
 
 	public void setNoOfCopies(int noOfCopies) {
-		this.noOfCopies = noOfCopies;
+		if (noOfCopies >= 0)
+			this.noOfCopies = noOfCopies;
+		else
+			System.out.println("No of Copies cannot be updated! Please check");
 	}
 
 	// behavior
+	public void increaseNoOfCopies(int increaseBy) {
+		setNoOfCopies(noOfCopies + increaseBy);
+	}
+
+	public void decreaseNoOfCopies(int decreaseBy) {
+		setNoOfCopies(noOfCopies - decreaseBy);
+	}
 
 	// override toString()
 	@Override
