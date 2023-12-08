@@ -5,9 +5,15 @@ public class MotorBike {
 	// state
 	private int speed; // member or instance variable which belongs to an instance or object
 
-	// constructor
+	// default constructor
 	public MotorBike() {
-		// this.speed = 50;
+		this(5);
+	}
+
+	// constructor with one parameter speed of type int
+	// sets initial speed to a MotorBike instance
+	public MotorBike(int speed) {
+		this.speed = speed;
 	}
 
 	// getters and setters

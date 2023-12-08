@@ -7,6 +7,8 @@ public class MotorBikeRunner {
 		MotorBike honda = new MotorBike();
 		MotorBike ducati = new MotorBike();
 
+		MotorBike kawasaki = new MotorBike(180);
+
 		honda.start();
 		ducati.start();
 

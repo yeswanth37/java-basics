@@ -8,6 +8,8 @@ public class BookRunner {
 		Book effectiveJava = new Book();
 		Book cleanCode = new Book();
 
+		Book algorithmsMadeEasy = new Book(100);
+
 		// Here the code and the data are not binded properly breaking encapsulation
 		// NO class should directly access the member variables and should only access
 		// through getters and setters

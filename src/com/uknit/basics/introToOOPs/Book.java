@@ -10,6 +10,11 @@ public class Book {
 		System.out.println("Book is created!");
 	}
 
+	// constructor with arguments
+	public Book(int noOfCopies) {
+		this.noOfCopies = noOfCopies;
+	}
+
 	// getters and setters
 	public int getNoOfCopies() {
 		return noOfCopies;
